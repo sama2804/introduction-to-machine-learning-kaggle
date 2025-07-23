@@ -9,7 +9,9 @@
 - There are many metrics for summarizing model quality, but one is called Mean Absolute Error (also called MAE). The prediction error will be : 
   - error = actual value − predicted value
 - A DecisionTreeRegressor builds a single decision tree to make predictions. This tree-like structure uses a series of "if-then" statements to arrive at a predicted outcome based on feature values.
-- A RandomForestRegressor builds multiple decision trees, each trained on a random subset of the training data and features. This ensemble of trees then averages their predictions to produce the final output.
+- A RandomForestRegressor uses many trees, and it makes a prediction by averaging the pr.edictions of each component tree. It generally has much better predictive accuracy than a single decision tree and it works well with default parameters
 - Models can suffer from either:
   - Overfitting: capturing various patterns that won't occur in the future, leading to less accurate predictions, or
   - Underfitting: failing to capture relevant patterns, again leading to less accurate predictions.
+ 
+Reference : https://www.kaggle.com/learn/intro-to-machine-learning
